@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Side</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+          integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+          integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+          crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../js/PostAndFetch.js" defer></script>
+</head>
+
+<body>
+
+<div class="header">
+  <ul class="nav-ul">
+    <li class="nav-li"><a onclick="createCykelrytter()" class="nav-login, center" style="float: left">Opret Cykelrytter</a></li>
+    <li class="nav-li"><a onclick="createHold()" class="nav-login, center" style="float: left">Opret Hold</a></li>
+  </ul>
+</div>
+
+<br>
+<h3 class="table-title" style="margin-right: 10px;">Cykelryttere</h3>
+
+<section>
+  <div id="container">
+    <div class="container-element" >
+      <div class="container-element-id">
+        <b>ID</b>
+      </div>
+      <div class="container-element-title">
+        <b>Navn</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h3 class="table-title">Hold</h3>
+
+<section>
+  <div id="hold-container">
+    <div class="container-element">
+      <div class="container-element-id">
+        <b>ID</b>
+      </div>
+      <div class="container-element-title">
+        <b>Navn</b>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+
+<div id="overlay">
+  <div class="modal-content" style="max-width: 600px; margin: 5% auto auto;">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title"></h4>
+    </div>
+    <form class="modal-input-field" id="modalForm" style="max-height: 400px;  margin: 5%;  overflow: auto;">
+
+    </form>
+
+    <div class="modal-footer">
+      <button type="submit" form="modalForm" id="submit" class="btn btn-default save" data-dismiss="modal">Gem</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    background-color: #478a93;
+  }
+</style>
+
+
+</body>
+</html>
